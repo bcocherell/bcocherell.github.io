@@ -77,6 +77,8 @@ input {
   padding: 6px 10px;
 }
 
+input::placeholder { color: #a4a2a1; }
+
 textarea {
   height: 150px;
   padding: 10px;
@@ -164,7 +166,7 @@ textarea {
   padding: 10px;
 }
 
-#relative {
+.relative {
   position: relative;
   width: 280px;
   height: 200px;
