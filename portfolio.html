@@ -10,8 +10,8 @@
 
 <body>
 
-  <header class="clearfix">
-    <div style="width: 960px; margin:0 auto;">
+  <header>
+    <div id="header-content">
       <div id="name">
         <h1>Brian Cocherell</h1> 
       </div>
@@ -23,64 +23,72 @@
     </div>
   </header>
 
-  <div class="content clearfix">
+  <div id="content">
     <section id="main">
       <h2>Portfolio</h2>
-      <div style="width: 100%; height: 3px; background: #dcdcdc; overflow: hidden; margin-bottom: 25px;"></div>
-      <div id="relative" style="float: left; margin-right: 48px;">
-        <img src="assets/images/placeholder_1.jpeg" alt="Hangman">
-        <!-- a div positioned absolutely in the relative div -->
-        <div id="absolute">
-          Hangman
+      <div id="thick-line"></div>
+      
+      <a href="#"> <!-- Including placeholder links since we'll probably revisit this later... -->
+        <div id="relative" class="portfolio-left-image">
+          <img src="assets/images/placeholder_1.jpeg" alt="Hangman">
+          <!-- a div positioned absolutely in the relative div -->
+          <div class="absolute">
+            Hangman
+          </div>
         </div>
-      </div>
+      </a>
+      <a href="#">
+        <div id="relative" class="portfolio-right-image">
+          <img src="assets/images/placeholder_2.jpeg" alt="RPG Game"></a>
+          <div class="absolute">
+            RPG Game
+          </div>
+        </div>
+      </a>
     
-      <div id="relative" style="float: left;">
-        <img src="assets/images/placeholder_2.jpeg" alt="RPG Game"></a>
-        <!-- a div positioned absolutely in the relative div -->
-        <div id="absolute">
-          RPG Game
+      <a href="#">
+        <div id="relative" class="portfolio-left-image">
+          <img src="assets/images/placeholder_3.jpeg" alt="Trivia Game">
+          <div class="absolute">
+            Trivia Game
+          </div>
         </div>
-      </div>
-      <div id="relative" style="float: left; margin-right: 48px;">
-        <img src="assets/images/placeholder_3.jpeg" alt="Trivia Game">
-        <!-- a div positioned absolutely in the relative div -->
-        <div id="absolute">
-          Trivia Game
+      </a>
+      <a href="#">
+        <div id="relative" class="portfolio-right-image">
+          <img src="assets/images/placeholder_4.jpeg" alt="Rutgers Info Widget">
+          <div class="absolute">
+            Rutgers Info Widget
+          </div>
         </div>
-      </div>
-      <div id="relative" style="float: left;">
-        <img src="assets/images/placeholder_4.jpeg" alt="Rutgers Info Widget">
-        <!-- a div positioned absolutely in the relative div -->
-        <div id="absolute">
-          Rutgers Info Widget
+      </a>
+    
+      <a href="#">
+        <div id="relative" class="portfolio-left-image">
+          <img src="assets/images/placeholder_5.jpeg" alt="Rock Paper Scissors">
+          <div class="absolute">
+            Rock Paper Scissors
+          </div>
         </div>
-      </div>
-      <div id="relative" style="float: left; margin-right: 48px;">
-        <img src="assets/images/placeholder_5.jpeg" alt="Rock Paper Scissors">
-        <!-- a div positioned absolutely in the relative div -->
-        <div id="absolute">
-          Rock Paper Scissors
-        </div>
-      </div>
+      </a>
     </section>
 
     <aside id="sidebar">
       <h3>Connect with Me</h3> 
-      <div style="width: 100%; height: 2px; background: #ededee; overflow: hidden; margin-bottom: 20px;"></div>
+      <div id="thin-line"></div>
       <a href="https://github.com/bcocherell" target="_blank">
-        <img id="github" src="assets/images/github.png" alt="GitHub">
+        <img class="connect-image" src="assets/images/github.png" alt="GitHub">
       </a>
       <a href="https://www.linkedin.com/in/briancocherell/" target="_blank">
-        <img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn">
+        <img class="connect-image" src="assets/images/linkedin.png" alt="LinkedIn">
       </a>
       <a href="https://stackoverflow.com/users/8507601/b-cocherell" target="_blank">
-        <img id="stackoverflow" src="assets/images/stackoverflow.png" alt="Stack Overflow">
+        <img class="connect-image" src="assets/images/stackoverflow.png" alt="Stack Overflow">
       </a>
     </aside>
   </div>    
 
-  <footer class="footer">
+  <footer id="footer">
     &copy; Copyright 2017 Brian Cocherell
   </footer>
 

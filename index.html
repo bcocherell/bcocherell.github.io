@@ -10,8 +10,8 @@
 
 <body>
 
-  <header class="clearfix">
-    <div style="width: 960px; margin:0 auto;">
+  <header>
+    <div id="header-content">
       <div id="name">
         <h1>Brian Cocherell</h1> 
       </div>
@@ -23,38 +23,43 @@
     </div>
   </header>
 
-  <div class="content clearfix">
+  <div id="content">
     <section id="main">
       <h2>About Me</h2>
-      <div style="width: 100%; height: 3px; background: #dcdcdc; overflow: hidden; margin-bottom: 25px;"></div>
+      <!-- Using a div for lines since <hr> tag in HTML5 now defines a thematic break rather than a horizontal rule -->
+      <div id="thick-line"></div>
+
       <img id="bio-image" src="assets/images/me.jpg" alt="Brian Cocherell">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis eros sollicitudin lorem pharetra commodo. Sed sit amet lorem nunc. Sed pretium lobortis eros quis mattis. In sed justo sed purus lobortis elementum at et purus. Vivamus eleifend nulla convallis, gravida lorem vel, convallis nisi. Suspendisse sodales vitae ligula quis sollicitudin. Cras id ex feugiat, consectetur felis ac, pulvinar tortor. Duis mattis arcu sed mauris facilisis pharetra. Vivamus vitae nisi diam. Cras consequat orci ac tortor tempus efficitur.
+        <-- Check this guy out!
       </p>
       <p>
-        Morbi auctor nisl ut purus posuere, vitae egestas leo ullamcorper. Sed eget turpis non nunc convallis luctus ut sed ex. Ut ornare luctus nibh, non tempus enim cursus et. Praesent vitae tempus erat. Duis pulvinar porttitor vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum non cursus ligula. Quisque laoreet justo in sollicitudin porta. Ut eu rhoncus urna. Proin tincidunt eleifend velit, id suscipit mi commodo eget. Sed convallis eleifend consectetur.
+        Welcome to my portfolio page, created for a full-stack web development bootcamp course I'm taking. I've been working in IT focusing purely on database technology for the past decade and wanted to learn some new skills. I'm currently in a DBA role, but I also have experience with database development and data warehouse development.
       </p>
       <p>
-        Donec ac accumsan dui. Nulla non ligula tellus. Aenean non consectetur massa. Curabitur viverra lacus sed tellus sodales fermentum. Phasellus ultrices velit sit amet mi tempor, nec pulvinar tortor fermentum. Suspendisse potenti. Donec gravida erat eu tortor laoreet euismod. Donec sit amet congue tortor. Sed nec lectus tincidunt, volutpat tortor ac, elementum ex. Etiam porttitor condimentum scelerisque. Donec dictum, mauris a commodo vulputate, ipsum neque convallis diam, quis tempus enim leo luctus felis.
+        Some other things about me... I've been in the Cleveland area my entire life... I've ridden across this great state twice on my bike, traveling from Cincinnati to Cleveland on the Pan Ohio Hope Ride... I enjoy beer & baseball (although I'm bummed about how our last season ended)... and I'm a pretty damn good bowler. There you go, enjoy the site!
+      </p>
+      <p>
+        
       </p>
     </section>
 
     <aside id="sidebar">
       <h3>Connect with Me</h3> 
-      <div style="width: 100%; height: 2px; background: #ededee; overflow: hidden; margin-bottom: 20px;"></div>
+      <div id="thin-line"></div>
        <a href="https://github.com/bcocherell" target="_blank">
-        <img id="github" src="assets/images/github.png" alt="GitHub">
+        <img class="connect-image" src="assets/images/github.png" alt="GitHub">
       </a>
       <a href="https://www.linkedin.com/in/briancocherell/" target="_blank">
-        <img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn">
+        <img class="connect-image" src="assets/images/linkedin.png" alt="LinkedIn">
       </a>
       <a href="https://stackoverflow.com/users/8507601/b-cocherell" target="_blank">
-        <img id="stackoverflow" src="assets/images/stackoverflow.png" alt="Stack Overflow">
+        <img class="connect-image" src="assets/images/stackoverflow.png" alt="Stack Overflow">
       </a>
     </aside>
   </div>    
 
-  <footer class="footer">
+  <footer id="footer">
     &copy; Copyright 2017 Brian Cocherell
   </footer>
 
